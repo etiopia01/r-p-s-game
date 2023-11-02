@@ -1,3 +1,4 @@
+import { score } from "./Result"
 export default function ScoreBoard() {
     return (
         <div className="w-[600px] rounded-lg border-2 border-Header-Outline flex justify-between items-center p-6">
@@ -8,7 +9,7 @@ export default function ScoreBoard() {
             </div>
             <div className="bg-white rounded-md p-2 h-full w-32 flex flex-col justify-center items-center">
                 <h4 className="text-Score-Text text-lg">SCORE</h4>
-                <p className="text-Dark-Text text-5xl">1</p>
+                <p className="text-Dark-Text text-5xl">{score.value}</p>
             </div>
         </div>
     )
