@@ -16,7 +16,7 @@ export default function ScoreBoard() {
             </div>
             <div className="bg-white rounded-md p-2 h-full w-32 flex flex-col justify-center items-center">
                 <h4 className="text-Score-Text text-lg">SCORE</h4>
-                <p className="text-Dark-Text text-5xl">{score}</p>
+                <p className="text-Dark-Text text-5xl mr-3">{score}</p>
             </div>
         </div>
     )

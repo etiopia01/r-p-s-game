@@ -1,14 +1,14 @@
 import { signal } from "@preact/signals-react"
 import { useNavigate } from "react-router-dom"
 import evaluate from "../utils"
-export const pick = signal("")
-export const randomPick = signal("")
+import { values } from "../utils"
+export const pick = signal(values[Math.floor(Math.random()*3)])
+export const randomPick = signal(values[Math.floor(Math.random()*3)])
 export const res = signal("")
 export const score = signal(parseInt(localStorage.getItem("score") || ""))
 
 export default function Pick({icon,name,dimension}:{icon:string, name:string, dimension:string}) {
     const navigate = useNavigate()
-    const values = ["rock","paper","scissors"]
 
   
 
@@ -38,7 +38,7 @@ export default function Pick({icon,name,dimension}:{icon:string, name:string, di
 
     return (
         <div className={`${name} ${dimension} hover:translate-y-2 hover:scale-105`} onClick={handleClick}>
-            <div className="bg-white h-full w-full rounded-full flex justify-center items-center ">
+            <div className="bg-white h-full w-full rounded-full flex justify-center items-center box ">
             <img src={icon} />
             </div>
 

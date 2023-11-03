@@ -29,3 +29,4 @@ export default function evaluate({pick1,pick2}:{pick1:string, pick2:string}) {
     }
     return ""
 }
+export const values = ["rock","paper","scissors"]
