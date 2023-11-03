@@ -1,23 +1,17 @@
-import { signal } from "@preact/signals-react"
+
 import Pick from "./Pick"
-import { pick, randomPick } from "./Pick"
-import evaluate from "../utils"
+import { pick, randomPick, res } from "./Pick"
+
 import { Link } from "react-router-dom"
 
 
-export const score = signal(0)
+
 
 
 export default function Result (){
     
     
-    let res = evaluate({pick1:pick.value, pick2: randomPick.value})
-    if(res === "You win") {
-        score.value += 1
-    }
-    if(res === "You lose") {
-        score.value -= 1
-    }
+   
 
 
 
