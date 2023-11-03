@@ -17,7 +17,7 @@ export default function Result (){
 
 
     return (
-        <div className="flex items-center justify-between gap-12 h-[600px] p-6">
+        <div className="flex items-center justify-between gap-12 p-6">
             <div className="flex flex-col gap-6 items-center">
                 <p className="text-2xl mb-4 text-white">YOU PICKED</p>
             <Pick name={pick.value} dimension="big" icon={`/icon-${pick.value}.svg`}/>
