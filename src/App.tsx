@@ -11,7 +11,7 @@ function App() {
   
 
   return (
-    <div className="main flex flex-col justify-start items-center p-16 gap-20 relative">
+    <div className={`main ${RulesOpen.value && "opacity"} flex flex-col justify-start items-center p-16 gap-20 relative`}>
       <ScoreBoard />
 
       <Routes>
