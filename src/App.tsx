@@ -7,9 +7,9 @@ import ScoreBoard from './components/ScoreBoard'
 import Rules from './components/Rules'
 import RulesBtn, { RulesOpen } from './components/RulesBtn'
 
+
 function App() {
   
-
   return (
     <div className={`main ${RulesOpen.value && "opacity"} flex flex-col justify-start items-center p-16 gap-20 relative`}>
       <ScoreBoard />

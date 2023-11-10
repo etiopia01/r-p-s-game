@@ -5,7 +5,7 @@ import { values } from "../utils"
 export const pick = signal(values[Math.floor(Math.random()*3)])
 export const randomPick = signal(values[Math.floor(Math.random()*3)])
 export const res = signal("")
-export const score = signal(parseInt(localStorage.getItem("score") || ""))
+export const score = signal(0)
 
 export default function Pick({icon,name,dimension}:{icon:string, name:string, dimension:string}) {
     const navigate = useNavigate()
@@ -20,12 +20,12 @@ export default function Pick({icon,name,dimension}:{icon:string, name:string, di
        res.value = evaluate({pick1:pick.value, pick2: randomPick.value})
        if(res.value==="You win") {
         score.value += 1
-        localStorage.setItem("score", score.value.toString())
+        
         
        }
         else if(res.value === "You lose") {
             score.value -= 1
-            localStorage.setItem("score", score.value.toString())
+            
         }
         
         navigate("/result") 
