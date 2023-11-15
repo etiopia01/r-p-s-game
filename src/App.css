@@ -16,13 +16,11 @@
 .paper,
 .scissors,
 .rock {
-  
   border-radius: 50%;
-  padding: 20px;
   
+  }
+
   
-  
-}
 .paper {
   background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%,50%));
 }
@@ -32,11 +30,33 @@
 .scissors {
   background: linear-gradient(hsl(39, 89%, 49%),hsl(40, 84%, 53%,50%));
 }
+
+@media screen and (max-width: 1024px){
 .small {
+  width:120px;
+height:120px;
+padding: 15px;
+
+}
+.big {
   width: 150px;
   height: 150px;
+  padding: 20px;
+  
+  
 }
+ }
+@media screen and (min-width: 1024px) {
+  
+
 .big {
   width: 200px;
   height: 200px;
+  padding: 20px;
+}
+.small {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}
 }

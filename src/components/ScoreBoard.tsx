@@ -8,7 +8,7 @@ export default function ScoreBoard() {
    
  
     return (
-        <div className="w-[600px] rounded-lg border-2 border-Header-Outline flex justify-between items-center p-6">
+        <div className="w-full max-w-[500px] rounded-lg border-2 border-Header-Outline flex justify-between items-center p-6 mx-32">
             <div>
               <p className="text-3xl text-white">ROCK</p>
               <p className="text-3xl text-white">PAPER</p>
